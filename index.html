@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media(max-width: 370px)
+{
+        .location .city{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        
+        .location .date{
+            font-size: 0.6rem;
+        }
+        
+        .current .temp{
+            font-size: 4.8rem;
+            font-weight: 900;       
+        }
+        
+        .current .temp span{
+            font-weight: 500;
+        }
+        
+        .current .weather{
+            
+            font-size: 1.2rem;
+            font-weight: 700;
+            
+        }
+        
+        .current .hi-low{
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            text-shadow: 0px 4px rgba(0,0,0,0.4);
+        }
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="app-wrap">
+        <div class="inside">
+        <header>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city...">
+        </header>
+        <div class="value">
+        <main>
+            <section class="location">
+                <div class="city">Northampton, GB</div>
+                <div class="date">Thursday 10 January 2020</div>
+            </section>
+            <div class="current">
+                <div class="temp">15<span>°C</span></div>
+                <div class="weather">Sunny</div>
+                <div class="hi-low">13°C / 16°C</div>
+            </div>
+        </main>
+         </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+    </script>
+</body>
+</html>
