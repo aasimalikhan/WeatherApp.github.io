@@ -65,6 +65,11 @@ function displayResults(weather) {
     {
         document.body.style.backgroundImage = "url('snow.jpg')";
     }
+
+    else if(weather.weather[0].main == 'Rain')
+    {
+        document.body.style.backgroundImage = "url('rain.jpg')";
+    }
     weather_el.innerText = weather.weather[0].main;
 
     let hilow = document.querySelector('.hi-low');
